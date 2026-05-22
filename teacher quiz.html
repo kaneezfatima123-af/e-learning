@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Quiz</title>
+  <link rel="stylesheet" href="teacher quiz.css">
+</head>
+<body>
+  <!-- Back Button -->
+  <button id="backBtn" class="back-btn">Back</button>
+
+  <header>
+    <h1>Welcome to Quiz</h1>
+    <p>Add MCQs for your course</p>
+  </header>
+
+  <main>
+    <form id="addQuizForm">
+      <div class="form-group">
+        <label>Question:</label>
+        <input type="text" id="questionInput" required>
+      </div>
+      <div class="form-group">
+        <label>Option A:</label>
+        <input type="text" id="optionA" required>
+      </div>
+      <div class="form-group">
+        <label>Option B:</label>
+        <input type="text" id="optionB" required>
+      </div>
+      <div class="form-group">
+        <label>Option C:</label>
+        <input type="text" id="optionC" required>
+      </div>
+      <div class="form-group">
+        <label>Option D:</label>
+        <input type="text" id="optionD" required>
+      </div>
+      <div class="form-group">
+        <label>Correct Answer (A/B/C/D):</label>
+        <select id="correctAnswer" required>
+          <option value="">--Select--</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+      </div>
+      <button type="button" id="uploadQuizBtn">Upload Quiz</button>
+    </form>
+
+    <p id="message"></p>
+
+    <section id="quizContainer">
+      <!-- Added questions will show here -->
+    </section>
+  </main>
+
+  <script src="js/teacher quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #ebe0ff;
+  color: #333;
+}
+
+/* Back Button */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.back-btn a {
+  background: #c7adff;
+  color:  #333;
+  text-decoration: none;
+  padding: 6px 16px;
+  font-size: 15px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.back-btn a:hover {
+  background: #c7adff;
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 100px 20px 50px;
+}
+
+/* Oval Box */
+.oval-box {
+  background: white;
+  width: 70%;
+  max-width: 700px;
+  padding: 30px 40px;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+.oval-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.oval-box h2 {
+  margin-bottom: 15px;
+  color: offwhite;
+  font-size: 24px;
+}
+.oval-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #46325d;
+}

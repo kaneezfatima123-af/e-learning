@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment Section</title>
+
+
+  <link rel="stylesheet" href="comments.css">
+</head>
+<body>
+  <!-- Back Button -->
+  <a href="student dashboard.html" class="back-btn">Back</a>
+
+  <!-- Login Box -->
+   <div class="container">
+
+  <!-- Heading -->
+  <h2 class="title">Student Comment Form</h2>
+
+  <!-- Comment Form -->
+  <div class="form-container">
+    <input type="text" id="name" placeholder="Enter your Name" required>
+    <input type="email" id="email" placeholder="Enter your Email" required>
+    <textarea id="comment" placeholder="Write your Comment..." required></textarea>
+    <button onclick="submitComment()">Submit</button>
+
+    <!--new button-->
+    <button onclick="loadComments()">Load My Comment</button>
+  </div>
+
+  <!-- Show Submitted Comments -->
+  <div id="comment-list"></div>
+
+  <script src="js/comments.js"></script>
+  </div>
+ 
+
+</body>
+</html>

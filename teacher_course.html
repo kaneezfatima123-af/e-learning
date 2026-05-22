@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  
+  <title>Teacher Course Upload</title>
+</head>
+<body>
+
+  <link rel="stylesheet" href="teacher_course.css">
+
+  <!-- Back Button -->
+  <button id="backBtn" class="back-button">Back</button>
+
+  <div class="dashboard">
+    <h1>Teacher Teach Section</h1>
+    <p>Welcome! Upload your course videos or assignments below.</p>
+
+    <!-- Upload Form -->
+    <form id="uploadForm">
+      <label for="course">Select Course:</label>
+      <select id="course" required>
+        <option value="">-- Choose Course --</option>
+        <option value="python">Python</option>
+        <option value="cpp">C++</option>
+      </select>
+
+      
+      <label for="courseLink">Course Link:</label>
+    <input type="text" id="file_url" placeholder="paste lecture link" required>
+      
+      <button type="submit">Upload</button>
+    </form>
+
+    <p id="message"></p>
+
+    <!-- Uploaded Files List -->
+    <h2>Uploaded Materials</h2>
+    <ul id="uploadList"></ul>
+  </div>
+
+  <!-- Logout Button -->
+  <button id="logoutBtn" class="logout">Logout</button>
+
+<script src="js/teacher_course.js"></script>
+  
+</body>
+</html>

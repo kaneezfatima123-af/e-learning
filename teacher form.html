@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Forum</title>
+  <link rel="stylesheet" href="teacher form.css">
+</head>
+<body>
+  <!-- Back Button -->
+  <button id="backBtn" class="back-btn">Back</button>
+
+  <div class="container">
+    <h1>Teacher Forum</h1>
+
+    <!-- Student Comments Section -->
+    <div class="student-comments">
+      <h2>Student Comments</h2>
+      <ul id="commentList"></ul>
+    </div>
+
+    <!-- Selected Comment Info -->
+    <div id="selectedInfo" class="selected-info">
+     
+    </div>
+
+    <!-- Teacher Answer Form -->
+    <form id="answerForm" class="answer-form">
+      <input type="hidden" id="selectedCommentId" name="selectedCommentId">
+      <label for="answer">Your Answer:</label>
+      <textarea id="answer" name="answer" placeholder="Type your response here..." required></textarea>
+      <button type="submit" class="submit-btn">Submit Answer</button>
+    </form>
+
+    <!-- Display Answers -->
+    <div id="answers" class="answers-section">
+      <h2>Teacher's Responses</h2>
+      <ul id="answerList"></ul>
+    </div>
+  </div>
+
+ <script src="js/teacher form.js"></script>
+  
+</body>
+</html>

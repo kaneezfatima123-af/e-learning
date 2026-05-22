@@ -1,0 +1,76 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* scroll hata diya */
+  background-color: #ebe0ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #7151a9;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  flex-shrink: 0;
+}
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #e1d8eb;
+}
+
+/* Hero Section */
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 30px;
+}
+.hero-text {
+  max-width: 50%;
+}
+.hero-text h2 {
+  font-size: 42px;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #573d7f;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.hero-text p {
+  font-size: 18px;
+  color: #46325d;
+  margin-top: 10px;
+}
+.hero img {
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px #7151a9(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+  background-color: #7151a9;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0;
+  font-size: 14px;
+}

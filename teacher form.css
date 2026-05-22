@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ebe0ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #c7adff;
+  color: black;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.back-btn:hover {
+  background: #c7adff;
+}
+
+.container {
+  margin-top: 80px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #573d7f;
+}
+
+.student-comment {
+  background: #eee6ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.answer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  border: 2px solid #c7adff;
+  border-radius: 10px;
+  font-size: 14px;
+  min-height: 100px;
+}
+
+.submit-btn {
+  background: #3f3649;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.submit-btn:hover {
+  background: #3f3649;
+}
+
+.answers-section {
+  margin-top: 20px;
+}
+
+.answers-section h2 {
+  color: #916dd6;
+}
+
+#answerList li {
+  background: #f0e6ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  list-style: none;
+}
+.selected-info {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+}
