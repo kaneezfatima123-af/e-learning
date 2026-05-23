@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const loadUploads = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/courses");
+      const response = await fetch("http://https://elearning-backend.bonto.run/api/courses");
       const data = await response.json();
 
       uploadList.innerHTML = "";
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/courses", {
+      const response = await fetch("http://https://elearning-backend.bonto.run/api/courses", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ course_name, course_link })

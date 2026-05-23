@@ -2,7 +2,7 @@ let quizData = [];
 
 async function loadQuiz() {
   try {
-    const response = await fetch("http://localhost:3000/api/quiz");
+    const response = await fetch("http://https://elearning-backend.bonto.run/api/quiz");
     const data = await response.json();
 
     const quizContainer = document.getElementById("quizContainer");

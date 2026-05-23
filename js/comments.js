@@ -12,7 +12,7 @@ window.submitComment = async function () {
   }
 
   try {
-    const response = await fetch("http://localhost:3000/api/comments", {
+    const response = await fetch("http://https://elearning-backend.bonto.run/api/comments", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ student_name: name, student_email: email, comment })
@@ -47,7 +47,7 @@ async function loadComments() {
   }
 
   try {
-    const response = await fetch(`http://localhost:3000/api/comments?email=${email}`);
+    const response = await fetch(`http://https://elearning-backend.bonto.run/api/comments?email=${email}`);
     const data = await response.json();
 
     const section = document.getElementById("comment-list");
