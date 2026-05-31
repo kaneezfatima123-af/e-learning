@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const loadUploads = async () => {
     try {
-      const response = await fetch("http://http://https://e-learning-six-sand.vercel.app/api/courses");
+      const response = await fetch("https://e-learning-six-sand.vercel.app/api/courses");
       const data = await response.json();
 
       uploadList.innerHTML = "";

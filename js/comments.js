@@ -47,7 +47,7 @@ async function loadComments() {
   }
 
   try {
-    const response = await fetch(`http://http://https://e-learning-six-sand.vercel.app/api/comments?email=${email}`);
+    const response = await fetch(`https://e-learning-six-sand.vercel.app/api/comments?email=${email}`);
     const data = await response.json();
 
     const section = document.getElementById("comment-list");
