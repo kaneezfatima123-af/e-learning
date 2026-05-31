@@ -2,7 +2,7 @@ let quizData = [];
 
 async function loadQuiz() {
   try {
-    const response = await fetch("http://http://https://e-learning-six-sand.vercel.app/api/quiz");
+    const response = await fetch("https://e-learning-six-sand.vercel.app/api/quiz");
     const data = await response.json();
 
     const quizContainer = document.getElementById("quizContainer");

@@ -12,7 +12,7 @@ window.submitComment = async function () {
   }
 
   try {
-    const response = await fetch("http://http://https://e-learning-six-sand.vercel.app/api/comments", {
+    const response = await fetch("https://e-learning-six-sand.vercel.app/api/comments", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ student_name: name, student_email: email, comment })

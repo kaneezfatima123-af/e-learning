@@ -5,7 +5,7 @@ document.getElementById("backBtn").addEventListener("click", () => {
 // Load pending comments
 async function loadComments() {
   try {
-    const response = await fetch("http://http://https://e-learning-six-sand.vercel.app/api/comments");
+    const response = await fetch("https://e-learning-six-sand.vercel.app/api/comments");
     const allComments = await response.json();
     const comments = allComments.filter(c => c.status === "pending");
 
