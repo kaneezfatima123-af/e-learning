@@ -5,7 +5,7 @@ document.getElementById("backBtn").addEventListener("click", () => {
 // Load pending comments
 async function loadComments() {
   try {
-    const response = await fetch("http://https://elearning-backend.bonto.run/api/comments");
+    const response = await fetch("http://http://https://e-learning-six-sand.vercel.app/api/comments");
     const allComments = await response.json();
     const comments = allComments.filter(c => c.status === "pending");
 
@@ -56,7 +56,7 @@ document.getElementById("answerForm").addEventListener("submit", async (e) => {
   }
 
   try {
-    const response = await fetch(`http://https://elearning-backend.bonto.run/api/comments/reply/${commentId}`, {
+    const response = await fetch(`http://http://https://e-learning-six-sand.vercel.app/api/comments/reply/${commentId}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ answer })
@@ -85,7 +85,7 @@ document.getElementById("answerForm").addEventListener("submit", async (e) => {
 // Load answered comments
 async function loadAnswers() {
   try {
-    const response = await fetch("http://https://elearning-backend.bonto.run/api/comments");
+    const response = await fetch("http://http://https://e-learning-six-sand.vercel.app/api/comments");
     const comments = await response.json();
 
     const answerList = document.getElementById("answerList");

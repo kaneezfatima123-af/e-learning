@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const response = await fetch("http://https://elearning-backend.bonto.run/api/quiz", {
+      const response = await fetch("http://http://https://e-learning-six-sand.vercel.app/api/quiz", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question, option_a, option_b, option_c, option_d, correct_answer })
